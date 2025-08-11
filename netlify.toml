@@ -1,0 +1,13 @@
+[build]
+  publish = "open-lovable/out"
+  command = "cd open-lovable && npm ci && npm run build"
+  node_bundler = "esbuild"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--prefix=open-lovable"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

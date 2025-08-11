@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:open": "node -e \"require('open')('http://localhost:3000')\" & npm run dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -54,6 +55,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.3",
+    "open": "^10.2.0",
     "tailwindcss": "^4.1.11",
     "typescript": "^5"
   }

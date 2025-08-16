@@ -1,0 +1,3 @@
+[submodule "open-lovable"]
+	path = open-lovable
+	url = https://github.com/mendableai/open-lovable
